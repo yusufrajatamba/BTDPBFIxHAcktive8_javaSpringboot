@@ -1,0 +1,18 @@
+1. create darabase h8_siakad / db_siakad / bfi_siakad
+2. create tabel	tb_mahasiswa / mahasiswa
+3. create field (sesuaikan dengan struktur tabel)
+	> tabel mahasiswa
+		id> pk(primary key), type data int ( 11)/ bigint(21), auti increment ( yang di db inisialiasi PK adalah id)
+		yang atas buat bantu kita ngambil identitas
+		nim(nomot induk mahasiswa) type data string(255)/50/100 (unik key)
+		email ( unik key)
+		nama mahasiswa type data string(100)
+		Jenis kelamin > String/varchar 50/2 >value data(P,L) > Perempuan/laki laki (tidak dikecualikan)
+			enum(P,L) > jika diisi "yang lain" > ini tidak bisa( karena sudah dikecualikan)
+			int (2) > 0,1 > comment "0=laki-laki / 2= perempuan"
+
+4. insert record / insert data mahasiswa
+		ini autp imkrement
+		insert into tb_mahasiswa( nim, email, nama_mahasiswa, jenkel) values("123", yusuf@gmail.com" "yusuf", "Laki-laki")
+e		yang ini didefinisikan berdasasrkan last id, contoh 5 yang terakhir > (didalam record/data)
+		insert into tb_mahasiswa( id, nim,email, nama_mahasiswa, jenkel)

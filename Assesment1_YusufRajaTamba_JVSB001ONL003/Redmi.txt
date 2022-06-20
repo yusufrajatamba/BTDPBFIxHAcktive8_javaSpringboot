@@ -1,0 +1,21 @@
+/** Ini Adalah redmi.
+* Nama : Yusuf Raja Tamba
+* Kode Peserta :JVSB001ONL003
+* Link Github : https://github.com/yusufrajatamba/AssignmentSesi03.git
+* Panduan Aplikasi :
+    * Artimatika 
+        // Penggunaan Aplikasi Artimatika dimana menghitung proses Artimatika dari 3 buah variabel.
+    * IncrementDecrement
+        // Penggunaan Aplikasi IncrementDecrement untuk menghitung nilai variabel yang sudah dilakukan proses IncrementDecrement 
+    * LuasLingkaran
+        // Aplikasi ini berfungsi untuk menghitung LuasLingkaran dengan rumus Pi*r*r, dimana nilai Pi default 3.14 dan nilai r di input manual
+    * PerbandinganTrueFalse
+        // Aplikasi ini berfungsi untuk melakukan check true dan false dari fungsi boolean pada variabel a-dan
+    * Penjumlahan X dan Y
+        // Aplikasi tersebut berfungsi untuk menjumlahkan nilai y1 dan y2 dengan berbagai oeprasi dan memasukkannya ke nilai x1 dan x2\
+    * Penjumlahan X dan Y Lanjutan
+        // Aplikasi ini berfungsi untuk melanjutkan hasil x1 dengan x2, dimana disini kita melakukan pengecekan boolean pada variabel tersebut.
+
+
+    jdk yang digunakan : JDK 17
+*/

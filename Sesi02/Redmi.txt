@@ -1,0 +1,7 @@
+/*  Penjelasan Program 
+    ** Pogram CheckGraduation
+        // Program melakukan check kelulusan dengan fungsi if sebagai logika percabangannya
+    ** Hadiah 
+        //
+
+*/

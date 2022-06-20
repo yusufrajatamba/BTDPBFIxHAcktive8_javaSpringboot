@@ -1,0 +1,56 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch JavaApps",
+            "request": "launch",
+            "mainClass": "JavaApps",
+            "projectName": "Sesi01_2222d301"
+        },
+        {
+            "type": "java",
+            "name": "Launch Linkedllist",
+            "request": "launch",
+            "mainClass": "Linkedllist",
+            "projectName": "Sesi01_2222d301"
+        },
+        {
+            "type": "java",
+            "name": "Launch FormatString",
+            "request": "launch",
+            "mainClass": "FormatString",
+            "projectName": "Sesi01_2222d301"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwitchOld",
+            "request": "launch",
+            "mainClass": "SwitchOld",
+            "projectName": "Sesi 01_22375121"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch HelloWord",
+            "request": "launch",
+            "mainClass": "HelloWord",
+            "projectName": "Sesi 01_22375121"
+        },
+        {
+            "type": "java",
+            "name": "Launch SwitchCase",
+            "request": "launch",
+            "mainClass": "SwitchCase",
+            "projectName": "Sesi 01_22375121"
+        }
+    ]
+}

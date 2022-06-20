@@ -1,0 +1,5 @@
+package com.learning.thread;
+
+public @interface Test {
+
+}

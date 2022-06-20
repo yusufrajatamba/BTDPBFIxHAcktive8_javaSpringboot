@@ -1,0 +1,324 @@
+14:07:35 From  Adam Ghufron  to  Everyone:
+	gereng
+14:08:18 From  Adam Ghufron  to  Everyone:
+	untung bukan alucard
+14:10:21 From  Adam Ghufron  to  Everyone:
+	liar
+14:10:41 From  Adam Ghufron  to  Everyone:
+	dasar wibu wkwkkw
+14:10:53 From  Adam Ghufron  to  Everyone:
+	luffy dah jadi yonkou gengs
+14:14:54 From  Mikail Gibran  to  Everyone:
+	beli gorengan di wano mas
+14:15:00 From  Mikail Gibran  to  Everyone:
+	abis lawan kaido laperrr
+14:15:17 From  Adam Ghufron  to  Everyone:
+	big mom lagi rehab mas
+14:15:22 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	ga relate sama wibu
+14:15:23 From  Adam Ghufron  to  Everyone:
+	abis di tusuk law
+14:15:29 From  Mikail Gibran  to  Everyone:
+	bantu aamiin aja
+14:18:58 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	itu gui nya beda krn dah install mongodb ya?
+14:23:04 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	bikin alias query kalua dikampusku nyebutnya
+14:23:18 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	iya bebas, alias nama
+14:24:31 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	kalau itu ganti header name
+14:25:26 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	aman mas
+14:28:48 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	order biasanya di akhir setelah union bisa mas
+14:48:31 From  Selfhy Ginting  to  Everyone:
+	kerennn
+14:48:59 From  Selfhy Ginting  to  Everyone:
+	wkwkwkw
+14:49:09 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	wkwkwk
+14:49:29 From  Yusuf Raja Tamba  to  Everyone:
+	wkwkwkwk
+14:49:30 From  Adam Ghufron  to  Everyone:
+	https://github.com/pematon/adminer-custom
+14:49:31 From  Adam Ghufron  to  Everyone:
+	itu mas
+14:49:52 From  Adam Ghufron  to  Everyone:
+	tinggal download aja di GitHub
+14:50:16 From  Adam Ghufron  to  Everyone:
+	mamah dede nya mana a?
+14:50:20 From  Mikail Gibran  to  Everyone:
+	WKWKWK
+14:52:09 From  Adam Ghufron  to  Everyone:
+	mas nnti saya minta recordingnya dong mas
+14:52:33 From  Adam Ghufron  to  Everyone:
+	yah😭
+14:53:16 From  Adam Ghufron  to  Everyone:
+	kalo yg custom gaperlu pake ekstensi pas akses di chrome
+14:53:24 From  Adam Ghufron  to  Everyone:
+	cukup localhost/adminer
+14:53:31 From  Mikail Gibran  to  Everyone:
+	aa rifqi dengan senang hati menjelaskan dari awal kok dam
+14:53:47 From  Yusuf Raja Tamba  to  Everyone:
+	saya td recor dam, ntar ku share deh
+14:53:59 From  Adam Ghufron  to  Everyone:
+	nanti katanya dijelasin juga cara bikin adminer custom nya wkwkw
+14:54:10 From  Adam Ghufron  to  Everyone:
+	nanti minta ya suf
+14:54:27 From  Adam Ghufron  to  Everyone:
+	pake obs mantep
+14:54:47 From  Adam Ghufron  to  Everyone:
+	biar kayak streamer youtube
+14:55:06 From  Yoga  to  Everyone:
+	admirer customnya ditaro di htdocs langsung semua ?
+14:55:11 From  Arrifqi Aziz Ardhiansyah  to  Everyone:
+	iyoo
+14:55:14 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	yups
+14:55:41 From  Yoga  to  Everyone:
+	okee tyy
+14:57:05 From  Adam Ghufron  to  Everyone:
+	masih gress
+14:58:14 From  Adam Ghufron  to  Everyone:
+	baru bikin table pegawai mas wkwkw
+14:58:21 From  Adam Ghufron  to  Everyone:
+	tadi sibuk nyimak
+14:58:26 From  Selfhy Ginting  to  Everyone:
+	masih aman mas..
+15:07:06 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	path nya, sama kayak saya td
+15:07:14 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	Mas kemungkinan ada query kaya gini ngga di pelajaran selanjutnya. Atau cuma basic SQL?		WITH tabelSementara AS (	    SELECT *, year - ROW_NUMBER() OVER (	        PARTITION BY name ORDER BY year	    ) 	    AS grupSementara	    FROM participation	), tabelFinal AS (	    SELECT *, COUNT(*) OVER (	        PARTITION BY name, grupSementara	    )	    AS grupFinal	    from tabelSementara	)	SELECT name	FROM tabelFinal	WHERE grupFinal >= 3	GROUP BY name	ORDER BY name;
+15:08:25 From  Arif  to  Everyone:
+	<build>
+	    <plugins>
+	        <plugin>
+	            <groupId>org.codehaus.mojo</groupId>
+	            <artifactId>exec-maven-plugin</artifactId>
+	            <version>1.6.0</version>
+	            <configuration>
+	                <mainClass>com.learning.sax.JavaReadXmlSaxEx</mainClass>
+	            </configuration>
+	        </plugin>
+	    </plugins>
+	  </build>
+15:10:11 From  Arif  to  Everyone:
+	mvn exec:java -Dexec.mainClass="com.ParsingXmlSax.module.Mail"
+	mvn exec:java -Dexec.mainClass="com.learning.dom.ParseKnownXMLStructure"
+	mvn exec:java -q
+15:11:31 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	wkwkwk
+15:12:35 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	udh mas
+15:12:41 From  Givan K Libryano  to  Everyone:
+	sudah
+15:13:00 From  Adam Ghufron  to  Everyone:
+	mongo -version
+15:13:15 From  Yoga  to  Everyone:
+	saya belum juga mas
+15:13:44 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	Aman
+15:13:47 From  Givan K Libryano  to  Everyone:
+	lagi install mongo mas
+15:13:58 From  Adam Ghufron  to  Everyone:
+	saya kyknya perlu di latih lagi mas utk sesi 9 sama 10
+15:16:59 From  Selfhy Ginting  to  Everyone:
+	siaap mas
+15:17:13 From  Mikail Gibran  to  Everyone:
+	alhamdulillah
+15:17:15 From  Mikail Gibran  to  Everyone:
+	merokok mas
+15:17:56 From  Adam Ghufron  to  Everyone:
+	ga doyan rokok mas
+15:18:07 From  Adam Ghufron  to  Everyone:
+	lebih enak the pucuk
+15:51:49 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	3.45
+15:52:50 From  Adam Ghufron  to  Everyone:
+	cwk atau cwk?
+15:53:17 From  Adam Ghufron  to  Everyone:
+	wkwkwkw sue
+15:54:35 From  Givan K Libryano  to  Everyone:
+	pelan" mas
+15:56:05 From  Chandra  to  Everyone:
+	https://start.spring.io/
+15:56:09 From  Yoga  to  Everyone:
+	wait
+15:56:15 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	wit
+15:56:18 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	wait
+15:57:03 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	wait lambat bgt kebuka
+15:57:15 From  Adam Ghufron  to  Everyone:
+	ora lupa sing sabar gengs
+15:57:57 From  Adam Ghufron  to  Everyone:
+	beda emang nax apple wkwkw
+15:58:55 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	Sabar gaes, tim lepi kantor diam menyimak, wkwkwk
+15:59:07 From  Arrifqi Aziz Ardhiansyah  to  Everyone:
+	tim gapernah megang apel
+15:59:20 From  Adam Ghufron  to  Everyone:
+	semangat gaes
+15:59:29 From  Adam Ghufron  to  Everyone:
+	jadi senior dev nnti dikasihg mcbook
+15:59:51 From  F.X. Airell Valerio S.W.  to  Everyone:
+	Giveaway mas
+15:59:51 From  Arrifqi Aziz Ardhiansyah  to  Everyone:
+	boleh di transfer kesini mas
+15:59:57 From  Selfhy Ginting  to  Everyone:
+	wkwkwk
+16:00:01 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	wkwkkw
+16:00:06 From  Adam Ghufron  to  Everyone:
+	MacBook gabisa valorant wkwwkw
+16:00:06 From  Arrifqi Aziz Ardhiansyah  to  Everyone:
+	gas Bandung
+16:01:05 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	LoL gaes, ga ada temen :')
+16:01:11 From  Adam Ghufron  to  Everyone:
+	greedysgood
+16:01:23 From  Adam Ghufron  to  Everyone:
+	eh greedyisgood yak
+16:01:42 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	Sabar sabar
+16:01:49 From  Zain  to  Everyone:
+	mas boleh tolong dr ulang? saya abis restart. abis install mongodb
+16:02:30 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	File - other - springboot starter -> nama : demoSpringHello, ganti jdk 8
+16:02:54 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	1.8 jre 8 jdk
+16:04:24 From  Adam Ghufron  to  Everyone:
+	mas saya nemunya Lampung
+16:04:56 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	next-Spring-devtools- MySQL (driver) - Lombok (less getter setter)-jpa
+16:05:10 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	next-finish
+16:06:56 From  Arrifqi Aziz Ardhiansyah  to  Everyone:
+	sabat + sebat adalah kunci
+16:07:04 From  Zain  to  Everyone:
+	mantap wkwk
+16:07:26 From  Adam Ghufron  to  Everyone:
+	sabar + teh pucuk adalah kuntjie
+16:08:00 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	Susu Beruang + Oreo adalah Primary Key :'
+16:08:21 From  Adam Ghufron  to  Everyone:
+	bala-bala + goodday adalah foreign key
+16:08:57 From  Arrifqi Aziz Ardhiansyah  to  Everyone:
+	Janjiw Toast dan Chocolate adalah Mandatory
+16:08:58 From  Adam Ghufron  to  Everyone:
+	travel resink
+16:09:31 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	driver jawa sama driver sumatera masih kalah wkwk
+16:09:36 From  Adam Ghufron  to  Everyone:
+	gaes kode materi katalon dah di email ya gaes
+16:09:56 From  Adam Ghufron  to  Everyone:
+	metromini lebih greget mas
+16:11:10 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	mas belum ngerasain bus kupj sumut, yg nyalip nya selalu nyaris nyawa melayang
+16:11:11 From  Adam Ghufron  to  Everyone:
+	temen saya Jakarta - lampung motoran mas wkwkw
+16:11:45 From  Arrifqi Aziz Ardhiansyah  to  Everyone:
+	saya beres mas
+16:14:16 From  Arif  to  Everyone:
+	<version>2.1.8.RELEASE</version>
+16:14:44 From  Arif  to  Everyone:
+	<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>2.7.0</version>
+			</dependency>
+		
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>2.7.0</version>
+			</dependency>
+16:14:57 From  Givan K Libryano  to  Everyone:
+	yg snapshot bukan?
+16:15:03 From  Selfhy Ginting  to  Everyone:
+	help > install new software 	work with :	https://download.eclipse.org/tm4e/snapshots/
+16:15:04 From  Selfhy Ginting  to  Everyone:
+	ini bukan mas?
+16:16:34 From  F.X. Airell Valerio S.W.  to  Everyone:
+	Ada 2 swagger ya mas?
+16:16:55 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	dibwah spring-boot-starter-test
+16:17:41 From  Adam Ghufron  to  Everyone:
+	bismillah dedek nya jadi programmer
+16:17:59 From  Adam Ghufron  to  Everyone:
+	itu mau ngikut belajar ngoding mas makanya nangis
+16:18:17 From  Mikail Gibran  to  Everyone:
+	lebih ke ngeliat sekilas bentuk kodingan sih dam
+16:18:22 From  Chandra  to  Everyone:
+	Window > Preferences > General > Editors > Autosave > Enable Auto-save for dirty editors > choose the autosave interval > apply and close.
+16:37:39 From  F.X. Airell Valerio S.W.  to  Everyone:
+	Wkwkwkw tadi apa aja yang diedit di test
+16:38:12 From  Zain  to  Everyone:
+	mas pom saya ada silangnya, udah ubah yang vesion sama tambahin swagger juga kok
+16:40:20 From  Yusuf Raja Tamba  to  Everyone:
+	iya pom saya juga silang mas
+16:42:17 From  Adam Ghufron  to  Everyone:
+	junit nya kyknya
+16:42:35 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	itu gara2 2.1.8.RELEASE
+16:42:53 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	balikin jadi 2.7.0 ntar bener
+16:43:16 From  Adam Ghufron  to  Everyone:
+	bukannya emg sengaja diganti 2.1.8?
+16:43:50 From  Farhan Ilhamdi  to  Everyone:
+	bikin folder di di src/main/java/com/example/demo
+16:43:59 From  Farhan Ilhamdi  to  Everyone:
+	folder: config, controller
+16:49:41 From  Arif  to  Everyone:
+	<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+			</dependency>
+16:57:01 From  Arif  to  Everyone:
+	import static springfox.documentation.builders.PathSelectors.regex;
+	import static com.google.common.base.Predicates.or;
+16:58:28 From  Arif  to  Everyone:
+	http://localhost:8080/swagger-ui.html
+17:03:00 From  Arif  to  Everyone:
+	<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+			</dependency>
+17:08:19 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	config swagger ada yg record ga?
+17:11:24 From  Zain  to  Everyone:
+	@Configuration	@EnableSwagger2	public class SwaggerConfig {			@Bean		public Docket postsApi() {			return new Docket(DocumentationType.SWAGGER_2).groupName("public-api")					.apiInfo(apiInfo()).select().paths(postPaths()).build();		}			private Predicate<String> postPaths() {			return or(regex("/api/posts.*"), regex("/api/hactive8.*"));		}			private ApiInfo apiInfo() {			return new ApiInfoBuilder().title("Test API")					.description("Test API reference for developers")					.license("Apache License Version 2.0")					.licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")					.version("1.0")					.build();		}	}
+17:11:28 From  Zain  to  Everyone:
+	ini bukan sih?
+17:12:31 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	ada mas
+17:13:25 From  Adam Ghufron  to  Everyone:
+	saya juga error pas install mas
+17:13:44 From  winda  to  Everyone:
+	ku jugaa
+17:15:20 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	samaa error juga
+17:16:07 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	punya gw The requested profile "pom.xml" could not be activated because it does not exist.
+17:19:33 From  F.X. Airell Valerio S.W.  to  Everyone:
+	Wkwkwk Paketu press confrence
+17:19:38 From  Selfhy Ginting  to  Everyone:
+	wkwkwkwk
+17:20:16 From  REZA YUSUF MAULANA,S.Kom.  to  Everyone:
+	webinar "how to fix error  swagger in eclipse"	narasumber = "Farhan"
+17:20:44 From  Indirwan Ihsan Hasibuan  to  Everyone:
+	udh ketinggalan jauh
+17:22:55 From  Selfhy Ginting  to  Everyone:
+	wkwkwkw
+17:23:02 From  F.X. Airell Valerio S.W.  to  Everyone:
+	Selamat!
+17:23:03 From  M. Machrush Aliy Sirojjam Mushlich  to  Everyone:
+	sabar gaes, wkwkwk
+17:23:48 From  Arrifqi Aziz Ardhiansyah  to  Everyone:
+	cara liat hello world tadi gimana
+17:24:39 From  winda  to  Everyone:
+	localhost/swagger trs apalagi gatau
+17:24:50 From  Selfhy Ginting  to  Everyone:
+	http://localhost:8080/swagger-ui.html akses ini mas kalau udah berhasil running

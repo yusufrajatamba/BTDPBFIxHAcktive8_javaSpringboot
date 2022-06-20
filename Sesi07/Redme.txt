@@ -1,0 +1,16 @@
+/* @author : Yusuf Raja Tamba 
+    project link : https://github.com/yusufrajatamba
+
+    ** Program sederhana Java Sesi 07 **
+    
+    1. Binary 
+        // menghitung nilai key dari index dalam aplikasi Binary
+    2. Binary Search 
+        // mengurutkan bilangan yang diinputkan pada data array sehingga proses pencarian lebih epat
+    3. Selectsort
+        // memilih object tertentu pada sebuah array atau data, sehingga mempermudah untuk melakukan proses pencarian
+     4. Shorten
+        // mengurutkan nilai secara manual menggunakan fungsi for
+
+*/
+

@@ -1,0 +1,27 @@
+/** Berikut ini Adalah penjelasan Kode Program didalam folder Sesi01
+* Ada 6 Program Java 
+    *HelloWord
+    *SwitchCaseOld
+    *SwitchCase
+    *JavaApps
+    *FormatString
+    *LinkedList
+
+ *HelloWord
+    //Aplikasi Sederhana dengan fuction print/println untuk menampilkan data;
+    *SwitchCaseOld
+    //Aplikasi Sederhana dengan menerapkan function Switch untuk melakukan pengecekan nilai String dari object "day" untuk ditampilkan sesuai case di Switch
+    *SwitchCase
+    //Aplikasi Sederhana dengan menerapkan function Switch untuk melakukan pengecekan nilai String dari object "day" untuk ditampilkan sesuai case di Switch namun ada perubahan pada beberapa kode 
+    *JavaApps
+    //Aplikasi Java untuk melakukan pengulangan menggunakan function for dan menampilkannya 
+    *FormatString
+    //Aplikasi java untuk menampilkan data dengan cara berbeda dari println, yaitu menggunakan function formatl.
+    *LinkedList
+    //Aplikasi java untuk menjalankan beberapa function yang berkaitan dengan library LinkedList dan perintah" LinkedList yang dapat dilakukan.
+
+*/
+
+/** 
+    // Menggunakan JDK Versi 8 dan 17
+    //Location file : PS C:\Users\095050\Documents\BootCamp Hacktiv8 x BFI\JAVA\Sesi01>
