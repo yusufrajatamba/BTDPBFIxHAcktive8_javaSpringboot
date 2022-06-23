@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content ="text/html;charser=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <form action="doLogin.do" method="post">
+            <table border="1">
+                <tr>
+                    <td>Username</td>
+                    <td>
+                        <input type="text" name="username" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td>
+                        <input type="password" name="password" id="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Login">
+                    </td>
+                </tr>
+            </table>
+                <%
+                    String err=(String) reguest.getAttribute("err");
+                    if(err!=null)
+                    {
+                %>
+                <script type="text/javascript">
+                    allert('<%=err%>');
+                </script>
+                <%
+                    }
+                %>
+        </form>
+    </body>
+</html>

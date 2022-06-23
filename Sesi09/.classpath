@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="demo_dom/src/main/java"/>
+	<classpathentry kind="src" path="demo_dom/src/test/java"/>
+	<classpathentry kind="src" path="demo_sax/src/main/java"/>
+	<classpathentry kind="src" path="demo_sax/src/test/java"/>
+	<classpathentry kind="src" path="DemoChallenge/src/main/java"/>
+	<classpathentry kind="src" path="DemoChallenge/src/test/java"/>
+	<classpathentry kind="lib" path="demo_dom/target/demo-dom-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="demo_sax/target/sax-demo-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="DemoChallenge/target/DemoChallenge-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="DemoChallenge/target/classes"/>
+</classpath>
