@@ -1,74 +1,88 @@
 package com.belajar.restapi.controller;
 
 import java.util.List;
-import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
 
-import com.belajar.restapi.repository.ProductRepository;
-import com.belajar.restapi.service.ProductService;
 import com.belajar.restapi.entity.Product;
+import com.belajar.restapi.service.ProductService;
 
-@CrossOrigin(origins = "http://localhost:8081")
-@RestController
-@RequestMapping("/home")
+
+
+@Controller
 public class ProductController {
 
 	@Autowired
-	private ProductRepository produkRepository;
-
-	@Autowired
-	private ProductService produkService;
-
-	@GetMapping("/productsReza")
-	public List<Product> findAllProducts() {
-		return produkRepository.findAll();
+	private ProductService productService;
+	
+	// display list of employees
+	@GetMapping("/")
+	public String viewHomePage(Model model) {
+		return findPaginated(1, "nama", "asc", model);		
 	}
-
-	@PostMapping("/productsReza")
-	public Product saveProducts(@RequestBody Product product) {
-		return produkService.saveProduct(product);
+	
+	@GetMapping("/showNewProductForm")
+	public String showNewProductForm(Model model) {
+		// create model attribute to bind form data
+		Product product = new Product();
+		model.addAttribute("product", product);
+		return "new_product";
 	}
-
-	@GetMapping("/productsReza/name/{name}")
-	public List<Product> findAllProductsByName(@PathVariable String name) {
-		return produkService.findAllProductsByName(name);
+	
+	@PostMapping("/saveProduct")
+	public String saveProduct(@ModelAttribute("product") Product product) {
+		// save employee to database
+		productService.saveProduct(product);
+		return "redirect:/";
 	}
-
-	@DeleteMapping("/productsReza/id/{id}")
-	public void deleteById(@PathVariable Long id) {
-		produkService.deleteProductById(id);
+	
+	@GetMapping("/showFormForUpdate/{id}")
+	public String showFormForUpdate(@PathVariable ( value = "id") long id, Model model) {
+		
+		// get employee from the service
+		Product product = productService.getProductById(id);
+		
+		// set employee as a model attribute to pre-populate the form
+		model.addAttribute("product", product);
+		return "update_product";
 	}
-
-	@CrossOrigin
-	@PutMapping("/productsReza")
-	public ResponseEntity<?> updateProductById(@RequestBody Product product, @RequestParam Long id) {
-
-		try {
-			Product checkProduct = produkService.findProductById(id);
-			if (checkProduct.getId() != id) {
-				return new ResponseEntity<>("ID Data Produk Belum Sesuai", HttpStatus.OK);
-			}
-			product.setId(id);
-			produkService.saveProduct(product);
-
-
-			return new ResponseEntity<>("Berhasil simpan produk", HttpStatus.OK);
-		} catch (NoSuchElementException e) {
-			return new ResponseEntity<>("Terjadi kesalahan" + e.getMessage(), HttpStatus.OK);
-		}
+	
+	@GetMapping("/deleteProduct/{id}")
+	public String deleteEmployee(@PathVariable (value = "id") long id) {
+		
+		// call delete employee method 
+		this.productService.deleteProductById(id);
+		return "redirect:/";
 	}
-
+	
+	
+	@GetMapping("/page/{pageNo}")
+	public String findPaginated(@PathVariable (value = "pageNo") int pageNo, 
+			@RequestParam("sortField") String sortField,
+			@RequestParam("sortDir") String sortDir,
+			Model model) {
+		int pageSize = 5;
+		
+		Page<Product> page = productService.findPaginated(pageNo, pageSize, sortField, sortDir);
+		List<Product> listEmployees = page.getContent();
+		
+		model.addAttribute("currentPage", pageNo);
+		model.addAttribute("totalPages", page.getTotalPages());
+		model.addAttribute("totalItems", page.getTotalElements());
+		
+		model.addAttribute("sortField", sortField);
+		model.addAttribute("sortDir", sortDir);
+		model.addAttribute("reverseSortDir", sortDir.equals("asc") ? "desc" : "asc");
+		
+		model.addAttribute("listProducts", listEmployees);
+		return "index";
+	}
 }

@@ -7,59 +7,53 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Data;
-import lombok.ToString;
-
 @Entity
 @Table(name = "tb_product")
-@Data
-@ToString
-	public class Product {
-		
-		@Id
-		@GeneratedValue(strategy = GenerationType.AUTO)
-		private Long id;
+public class Product {
+	
+	@Id
+	@GeneratedValue(strategy =  GenerationType.IDENTITY)
+	private long id;
+	
+	@Column(name = "nama")
+	private String nama;
+	
+	@Column(name = "harga_beli")
+	private Long hargaBeli;
+	
+	@Column(name = "harga_jual")	
+	private Long hargaJual;
 
-		@Column(name = "name")
-		private String name;
+	public long getId() {
+		return id;
+	}
 
-		@Column(name = "hargaBeli")
-		private int hargaBeli;
+	public void setId(long id) {
+		this.id = id;
+	}
 
-		@Column(name = "hargaJual")
-		private int hargaJual;
+	public String getNama() {
+		return nama;
+	}
 
-		public Long getId() {
-			return id;
-		}
+	public void setNama(String nama) {
+		this.nama = nama;
+	}
 
-		public void setId(Long id) {
-			this.id = id;
-		}
+	public Long getHargaBeli() {
+		return hargaBeli;
+	}
 
-		public String getName() {
-			return name;
-		}
+	public void setHargaBeli(Long hargaBeli) {
+		this.hargaBeli = hargaBeli;
+	}
 
-		public void setName(String name) {
-			this.name = name;
-		}
+	public Long getHargaJual() {
+		return hargaJual;
+	}
 
-		public int getHargaBeli() {
-			return hargaBeli;
-		}
-
-		public void setHargaBeli(int hargaBeli) {
-			this.hargaBeli = hargaBeli;
-		}
-
-		public int getHargaJual() {
-			return hargaJual;
-		}
-
-		public void setHargaJual(int hargaJual) {
-			this.hargaJual = hargaJual;
-		}
-
+	public void setHargaJual(Long hargaJual) {
+		this.hargaJual = hargaJual;
+	}
 	
 }

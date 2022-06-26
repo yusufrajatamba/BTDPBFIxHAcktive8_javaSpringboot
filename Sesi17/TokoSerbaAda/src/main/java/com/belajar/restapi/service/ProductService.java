@@ -2,18 +2,15 @@ package com.belajar.restapi.service;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
+
 import com.belajar.restapi.entity.Product;
 
+
 public interface ProductService {
-	List<Product> findAllProducts(); // menampilkan semua product
-
-	List<Product> findAllProductsByName(String name); // mencari product bedasarkan nama
-	// select * from tb_product where name = ?1
-	// select * from tb_product where name = ?1 and harga = ?2
-
-	Product findProductById(Long id);
-
-	Product saveProduct(Product product);
-
-	void deleteProductById(Long id);
+	List<Product> getAllProducts();
+	void saveProduct(Product product);
+	Product getProductById(long id);
+	void deleteProductById(long id);
+	Page<Product> findPaginated(int pageNo, int pageSize, String sortField, String sortDirection);
 }

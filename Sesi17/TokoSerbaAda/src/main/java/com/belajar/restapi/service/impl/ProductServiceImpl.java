@@ -1,8 +1,13 @@
 package com.belajar.restapi.service.impl;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import com.belajar.restapi.entity.Product;
@@ -13,37 +18,41 @@ import com.belajar.restapi.service.ProductService;
 public class ProductServiceImpl implements ProductService {
 
 	@Autowired
-	private ProductRepository productsRepository;
+	private ProductRepository productRepository;
 
 	@Override
-	public List<Product> findAllProducts() {
-		// TODO Auto-generated method stub
-		return productsRepository.findAll();
+	public List<Product> getAllProducts() {
+		return productRepository.findAll();
 	}
 
 	@Override
-	public List<Product> findAllProductsByName(String name) {
-		// TODO Auto-generated method stub
-		return productsRepository.findAllByName(name);
+	public void saveProduct(Product product) {
+		this.productRepository.save(product);
 	}
 
 	@Override
-	public Product findProductById(Long id) {
-		// TODO Auto-generated method stub
-		return productsRepository.findProductsById(id);
+	public Product getProductById(long id) {
+		Optional<Product> optional = productRepository.findById(id);
+		Product product = null;
+		if (optional.isPresent()) {
+			product = optional.get();
+		} else {
+			throw new RuntimeException(" Product not found for id :: " + id);
+		}
+		return product;
 	}
 
 	@Override
-	public Product saveProduct(Product product) {
-		// TODO Auto-generated method stub
-		return productsRepository.save(product);
+	public void deleteProductById(long id) {
+		this.productRepository.deleteById(id);
 	}
 
 	@Override
-	public void deleteProductById(Long id) {
-		// TODO Auto-generated method stub
-		productsRepository.deleteById(id);
-
+	public Page<Product> findPaginated(int pageNo, int pageSize, String sortField, String sortDirection) {
+		Sort sort = sortDirection.equalsIgnoreCase(Sort.Direction.ASC.name()) ? Sort.by(sortField).ascending() :
+			Sort.by(sortField).descending();
+		
+		Pageable pageable = PageRequest.of(pageNo - 1, pageSize, sort);
+		return this.productRepository.findAll(pageable);
 	}
-
 }
