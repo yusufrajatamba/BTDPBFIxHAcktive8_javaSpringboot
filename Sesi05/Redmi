@@ -1,0 +1,30 @@
+Penjelasan Program
+-------------------
+@uthor : Yusuf Raja Tamba
+-------------------
+Teori Program : OOP (Object Oriented Programing)
+    1. Object pada Java adalah entitas yang memiliki keadaan dan
+    perilaku dikenal sebagai objek di dunia nyatamisalnya kursi, sepeda, spidol, pulpen, meja, mobil, dan lain sebagainy.
+    
+    2. Class  adalah sekelompok objek yang memiliki properti yang sama.
+    Ini adalah blueprint  dari mana objek dibuat.
+        Kelas di Java dapat berisi:
+          1.Fields
+          2.Method
+          3.Konstruktor
+          4.Blok
+    3. Inheritance
+      Salah satu bentuk hubungannya adalah inheritance (pewarisan).
+      Hubungan ini seperti hubungan keluarga antara orang tua dan anak.
+      Ide di balik inheritance di Java adalah Kita dapat membuat kelas baru yang dibangun di atas kelas yangsudah ada.
+      Saat Kita mewarisi dari class yang ada, Kita dapat menggunakan kembali Method dan field dari kelasparents.
+      
+Penjelasan Program :
+    1. Bangun Datae
+      Menghitung nilai Luas dan keliling dari setiap bangun datar yang dideklarasikan,
+      a. Setiap bangun datar akan dipisahkan sesuai class masing"
+      b. bangun datar di panggil di main class
+    2. Max Number
+      Menghitung max number dari urutan angka yang diinput 
+    3. Restoran
+      mengecheck harga makanan
