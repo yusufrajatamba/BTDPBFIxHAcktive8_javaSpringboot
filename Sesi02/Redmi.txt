@@ -1,7 +1,16 @@
-/*  Penjelasan Program 
+  Penjelasan Program 
+  -----------------
     ** Pogram CheckGraduation
         // Program melakukan check kelulusan dengan fungsi if sebagai logika percabangannya
     ** Hadiah 
-        //
+        // Program ini bertujuan untuk menentukan user mendapatkan hadiah atau tidak
+    ** Hitung Grade
+        // Program menghitung grade nilai dari siswa
+    ** Kasir 
+        // Program menghitung total belanja 
+    ** Lampu lalu lintas
+        // Program check lampu lalulintas untuk meliontas sesuai arahan
+    ** Operator aritmatika, conditional. pembanding, penugasan, operator tennary
+        // Program menjalankan operator menggunakan loop
 
 */
