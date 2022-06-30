@@ -78,4 +78,6 @@ public class MahasiswaController {
         mahasiswaDao.delete(mahasiswa);
         return "redirect:/index";
     }
+    
+
 }

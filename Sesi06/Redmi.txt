@@ -1,0 +1,79 @@
+1. Mengenal Git
+Git adalah salah satu sistem pengontrol versi(Version Control System)pada proyek perangkat lunak yang diciptakan oleh Linus Torvalds. Tugasnya mencatat setiap perubahan pada file proyek yangdikerjakan oleh banyak orang maupun sendiri. Git dikenal juga dengan distributed revision control (VCS terdistribusi), dimana penyimpanan database Git tidak hanya di satu tempat saja.
+
+
+Dengan menggunakan Git semua orang yang terlibat dalam pengkodean proyek akan menyimpan database Git, sehingga sangat memudahkan dalam mengelola proyek baik online maupun offline. Dengan kata lain Git sebenarnya bertugas memantau semua perubahan yang terjadi pada fiile proyek, lalu menyimpannya di database.
+
+Dan di dalam Git terdapat merge dimana para programmer sering menyebutkan kata merge ini sebagai aktifitas penggabungan kode atau kolaborasi dari dua atau lebih file kode yang kemudian di gabungkan dan setelah itu disimpan dalam database.
+
+Git hanya akan menyimpan delta perubahannya saja, Git tidak akan menyimpan seluruh isi file yang akan memakan banyak memori. Dan Git memungkinkan untuk bisa kembali ke file versi sebelumnya yang kita inginkan. selain itu bebrapa manfaat Git yang akan dirasakan jika kita menguasainnya, ialah:
+
+Bisa menyimpan seluruh versi source code;
+Bisa paham cara kolaborasi dalam proyek;
+Bisa ikut berkontribusi ke poryek open-source;
+Lebih aman digunakan untuk kolaborasi, karena kita bisa tahu apa yang diubah dan siapa yang mengubahnya.
+Bisa memahami cara deploy aplikasi modern;
+Bisa membuat blog dengan SSG.
+2. Konfigurasi Awal yang harus dilakukan
+Setelah mengenal Git dan kenapa kita mesti belajar Git bagi seorang programmer? Selanjutnya, mari belajar Git untuk pemula. Langkah pertama ialah kita harus menginstall Git terlebih dahulu. Teman- teman bisa klik untuk Download Git.
+
+Setelah Git terinstall, ada beberapa konfigurasi yang harus dipersiapkan sebelum mulai menggunakan Git. Silakan lakukan konfigurasi dengan perintah berikut ini.
+
+git config --global user.name "My Name"
+git config --global user.email myEmail@exampel.com
+Kemudian periksa konfigurasinya dengan perintah:
+
+git config --list
+Jika kamu memiliki akun Github, Gitlab, Bitbucket atau yang lainnya, maka username dan email harus mengikuti akun tersebut agar mudah diintegrasikan.
+
+3. Membuat Repositori Baru dalam Proyek
+Repositori (repository) dalam bahasa indonesia artinya gudang. Repositori merupakan istilah yang digunakan untuk direktori proyek yang menggunakan Git.
+
+A. Membuat Repositori
+
+Membuat Repositori dapat dilakukan dengan perintah git init.
+
+$ cd Desktop/git_exercise/
+$ git init 
+atau bisa juga langsung ke folder yang berisi file tugas yang akan di repositori ke akun github, gitlab atau Bitbucket. pilih folder yang ingin di repositori dengan cara klik kanan trus pilih “Git Bash Here” setelah itu ketik git init.
+
+setelah itu lihat di dalam folder yang akan di repositori akan ada satu folder dengan nama “.git”. Jika sudah ada, selanjutnya ketik perintah dibawah.
+
+git remote add origin https://github.com/userName/Folder-proyek1.git
+git push -u origin master
+Setelah itu, check repositori pada akun github, gitlab atau Bitbucket. File repositori anda apakah sudah terisi sesuai yang di inginkan. JIka sudah , lanjut ke step revisi.
+
+4. Simpan Perubahan Revisi dengan Git Commit
+Ketika kita sudah meng-upload folder kita, akan tetapi ada sebuah atau beberapa file yang belum ikut ke upload atau dala projek kita ingin menmbahkan kode atau text lainnya. kita bisa merevisi tanpa harus menghapus data sebelumnya kemudian mengupload lagi. Disini kelebihan dari Git bisa menyimpan perubahan revisi dengan git commit, caranya ialah:
+
+pertama silakan ketik perintah git add .
+
+git add .
+setelah itu, cobalah ketik perintah git status .
+
+git status
+Setelah itu, ubah kondisi file ke commited agar semua perubahan disimpan oleh Git dengan cara ketik perintah berikut.
+
+git commit -m "Add FILE.txt"
+Setelah itu, coba cek dengan perintah git status lagi. Lalu ketik perintah
+
+git push origin master
+setelah itu check repositori github, gitlab atau Bitbucket anda. Apkah bertambah? jika bertambah, selamat revisi pertama anda berhasil.
+
+selain itu ada beberapa istilah yang kalian harus pahami untuk menguasai gitbash. silakan kalian coba klik link ini atau link1 ini.
+
+5. Merge (penggabungan kode atau kolaborasi)
+
+Cara untuk menggabungkan kode lama dengan yang baru yaitu dengan merge. caranya ialah :
+
+git add .
+git commit -m "revisi"
+git push origin fahmi(nama branch)
+setelah itu kita beralih branch dari fahmi kembali ke master degan cara ketik perintah :
+
+git checkout master(branch)
+Lalu, setelah posisi kita sudah di branch master, ketik perintah
+
+git merge fahmi
+git pull origin master
+selesai, jika sudah lihat perubahan pada repositori dan lihat hasilnya.
