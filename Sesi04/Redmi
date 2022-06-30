@@ -1,0 +1,19 @@
+Penjelasan Program
+-------------------
+  -. Array adalah sebuah variabel yang bisa menyimpan banyak data dalam 1 variabel dan menggunakan indeksuntuk mengakses data.
+  -. Array pada Java berbasis indeks, di mana elemen pertama dari array ini disimpan di dalam indeks 0,elemenke-2 disimpan di indeks pertama dan begitulah seterusnya
+  
+  
+  1. Porgram Tree
+  “Kalau struktur data tree sudah tersusun rapi sesuai aturan mainnya, proses search akan lebih cepat.”Aturan main Binary Search Tree :
+  ●Setiap child node sebelah kiri harus lebih kecil nilainya daripada root nodenya.
+  ●Setiap child node sebelah kanan harus lebih besar nilainya daripada root nodenya.Lalu, 
+  
+  ada 3 jenis cara untuk melakukan penelusuran data (traversal) pada BST :
+  
+  ●PreOrder : Print data, telusur ke kiri, telusur ke kanan
+  ●InOrder : Telusur ke kiri, print data, telusur ke kanan
+  ●Post Order : Telusur ke kiri, telusur ke kanan, print data
+  
+  
+  
